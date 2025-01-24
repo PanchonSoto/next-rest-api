@@ -18,6 +18,17 @@ npm install
 docker compose up -d
 ```
 
+### 3. Environments
+Create or copy `.env.template` to `.env` on the root dir with the following variables:
+```env
+DATABASE_URL=
+```
+#### Prisma commands
+```bash
+npx prisma init
+npx prisma migrate
+npx prisma generate
+```
 
 ## Notes
 - Asegúrate de que el archivo `.env` tenga valores válidos antes de iniciar el proyecto.
